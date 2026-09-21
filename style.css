@@ -1,0 +1,253 @@
+/* Import Google Font yang Bulat & Lucu */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Background gradasi pastel ceria */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #a1c4fd 100%);
+    background-attachment: fixed;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px 10px;
+}
+
+/* Container Kartu Utama */
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    border: 4px solid #ffffff;
+}
+
+/* Header Ceria */
+header {
+    background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 0px #e6005c;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.25);
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+/* Navigation Menu Ala Tombol Playful */
+nav {
+    background: #fffae6;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px dashed #ffd166;
+}
+
+nav a {
+    color: #4a4e69;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 20px;
+    background: #ffffff;
+    border: 2px solid #ffd166;
+    box-shadow: 0 4px 0px #ffd166;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    transform: translateY(-3px);
+    background: #ff6b6b;
+    color: #ffffff;
+    border-color: #ff6b6b;
+    box-shadow: 0 6px 0px #ee5253;
+}
+
+/* Main Content Area */
+main {
+    padding: 35px 30px;
+}
+
+/* Section Kartu Warna-Warni */
+section {
+    margin-bottom: 25px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 22px;
+    border: 3px solid #f0f3f8;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+}
+
+/* Judul Section */
+h2 {
+    color: #ff4757;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: inline-block;
+    background: #ffeaa7;
+    padding: 6px 18px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 0px #fdcb6e;
+}
+
+/* Profil Foto & Tabel */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #ff758c;
+    box-shadow: 0 10px 20px rgba(255, 117, 140, 0.4);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.profile-img:hover {
+    transform: scale(1.08) rotate(4deg);
+}
+
+/* Tabel Biodata */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #e0e6ed;
+}
+
+table tr:nth-child(even) {
+    background-color: #fbfaff;
+}
+
+table tr:hover {
+    background-color: #fff0f3;
+}
+
+table td {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    border-bottom: 1px dashed #e2e8f0;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table td:first-child {
+    background-color: #e8f4f8;
+    color: #2b6cb0;
+    width: 38%;
+    font-weight: 600;
+}
+
+/* List Styling */
+ol, ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+ul li::marker {
+    color: #ff4757;
+    font-size: 1.2rem;
+}
+
+ol li::marker {
+    color: #1e90ff;
+    font-weight: 700;
+}
+
+/* Button Social Media Bubble */
+.social-link {
+    display: inline-block;
+    color: #ffffff;
+    background: linear-gradient(135deg, #70a1ff, #1e90ff);
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    margin-left: 8px;
+    box-shadow: 0 4px 0px #104e8b;
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0px #104e8b;
+    background: linear-gradient(135deg, #1e90ff, #70a1ff);
+}
+
+/* Sembunyikan hr bawaan */
+hr {
+    display: none;
+}
+
+/* Footer Warna Gelap Ceria */
+footer {
+    background: #2f3542;
+    color: #f1f2f6;
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 5px solid #ff4757;
+}
+
+footer p:first-child {
+    font-size: 1rem;
+    color: #ffa502;
+    font-weight: 600;
+}
+
+/* Responsif HP */
+@media (min-width: 650px) {
+    .profile-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
